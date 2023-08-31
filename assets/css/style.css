@@ -1,0 +1,137 @@
+/* Fonts */
+/* font-family: "Red Hat Display", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  resize: none;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("../../images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--pale-blue);
+}
+
+.order-card-item {
+  background-color: white;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+}
+.order-card-image {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.order-card-info {
+  padding: 30px 0;
+  gap: 20px;
+}
+.order-card-desc {
+  color: var(--desaturated-blue);
+  font-size: 13px;
+  width: 74%;
+  line-height: 20px;
+}
+.order-card-subscription-container {
+  background-color: var(--very-pale-blue);
+  border-radius: 15px;
+  width: 300px;
+  height: 75px;
+  gap: 50px;
+}
+
+.order-card-subscription-info {
+  gap: 3px;
+}
+
+.subscription-icon {
+  margin-right: 10px;
+  scale: 0.8;
+}
+
+.order-card-subscription-heading {
+  font-size: 14px;
+}
+.order-card-subscription-price {
+  color: var(--desaturated-blue);
+}
+.order-card-change-link {
+  text-decoration: underline;
+  color: var(--bright-blue);
+  font-size: 11px;
+  font-weight: 700;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.order-card-payment {
+  gap: 30px;
+}
+
+.order-card-payment button {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.order-card-payment-proceed-button {
+  color: white;
+  width: 300px;
+  height: 40px;
+  background-color: var(--bright-blue);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 14px 0px rgba(56, 41, 224, 0.4);
+          box-shadow: 0px 10px 14px 0px rgba(56, 41, 224, 0.4);
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.order-card-payment-cancel-button {
+  color: var(--desaturated-blue);
+  background: transparent;
+  font-size: 13px;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.order-card-change-link:hover {
+  color: var(--desaturated-blue);
+}
+.order-card-payment-proceed-button:hover {
+  background: var(--desaturated-blue);
+}
+
+.order-card-payment-cancel-button:hover {
+  color: var(--dark-blue);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+
+  .order-card-desc{
+    font-size: 14px;
+  }
+}
