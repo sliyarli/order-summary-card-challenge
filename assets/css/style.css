@@ -128,7 +128,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url("../images/pattern-background-mobile.svg");
+    background-image: url("../../images/pattern-background-mobile.svg");
   }
 
   .order-card-desc{
